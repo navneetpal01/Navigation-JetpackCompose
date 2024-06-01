@@ -1,5 +1,6 @@
 package com.example.naigation_jetpackcompose.nvgraph
 
+import com.example.naigation_jetpackcompose.User
 import kotlinx.serialization.Serializable
 
 
@@ -10,7 +11,8 @@ sealed class Route{
 
     @Serializable
     data class Details(
-        val id : Int
+//        val id : Int
+        val user : User
     ): Route()
 }
 
